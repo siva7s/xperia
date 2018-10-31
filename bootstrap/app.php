@@ -23,6 +23,8 @@ $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
 
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+
 // $app->withFacades();
 
 // $app->withEloquent();
